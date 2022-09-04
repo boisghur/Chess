@@ -10,7 +10,7 @@ IMAGES = {}
 def loadImgs():
     pieces = ['bB','bK','bN','bp','bQ','bR','wB','wK','wN','wp','wQ','wR']
     for piece in pieces:
-        IMAGES[piece] = p.transfer.scale(p.image.load("images/" + piece +".png"), (SQ_SIZE,SQ_SIZE))
+        IMAGES[piece] = p.transform.scale(p.image.load("images/" + piece +".png"), (SQ_SIZE,SQ_SIZE))
 
 
 
@@ -33,7 +33,7 @@ def main():
 
 def drawGameState(screen,gs):
     drawBoard(screen)
-    drawPieces(screen,gs.board)
+    #drawPieces(screen,gs.board)
 
 def drawBoard(screen):
     colors = [p.Color("white"),p.Color("black")]
@@ -43,5 +43,5 @@ def drawBoard(screen):
             p.draw.rect(screen, color, p.Rect(j*SQ_SIZE,i*SQ_SIZE,SQ_SIZE,SQ_SIZE))
 
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     main()
