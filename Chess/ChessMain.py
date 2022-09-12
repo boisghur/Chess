@@ -28,7 +28,6 @@ def main():
     playerClicks = []
     print(gs.whiteMove)
     while running:
-        #validMoves = gs.getValidMoves()
         for e in p.event.get():
             if e.type == p.QUIT:
                 running = False
