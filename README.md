@@ -4,7 +4,9 @@
 ## About:
 
 A chess engine and game with graphics designed in python with pygame. 
+
 I recently started playing chess but I didn't want to pay for a chess.com membership, which is required if you wanna solve puzzles, so decided to build my own game.
+
 I decided to use python because, prior to this game, I had only used python for data analytics and to build Choose your own adventure games.
 
 ## Completed:
